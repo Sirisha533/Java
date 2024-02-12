@@ -1,7 +1,7 @@
-class Main
+public class Main
 {
     public void abc(){
-        System.out.println("A");
+        System.out.println("Super Class");
     }
     public void abc(int a){
         System.out.println(a);
@@ -14,14 +14,23 @@ class Main
 		ob.abc();
 		ob.abc(4);
 		ob.abc(5,9);
+		System.out.println();
 		subClass ob1=new subClass();
-		ob1.abc(10,20);
+		ob1.abc();
+		ob1.abc(4);
+		ob1.abc(5,9);
 		
 	} 
 }
 class subClass extends Main{
+    
+    public void abc(){
+        System.out.println("Sub Class");
+    }
+    public void abc(int a){
+        System.out.println(a);
+    }
     public void abc(int a,int b){
         System.out.println(a+b);
     }
-    
 }
