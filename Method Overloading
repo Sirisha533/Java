@@ -1,0 +1,19 @@
+public class Main
+{
+    public void abc(){
+        System.out.println("A");
+    }
+    public void abc(int a){
+        System.out.println(a);
+    }
+    public void abc(int a,int b){
+        System.out.println(a+b);
+    }
+    
+	public static void main(String[] args) {
+		Main ob=new Main();
+		ob.abc();
+		ob.abc(4);
+		ob.abc(5,9);
+	}
+}
